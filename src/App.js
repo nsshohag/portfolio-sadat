@@ -10,7 +10,7 @@ function App() {
     <ThemeProvider theme={chosenTheme}>
       <>
         <GlobalStyles />
-        <div>
+        <div style={{ width: "100%", flex: 1, display: "flex", flexDirection: "column" }}>
           <Main theme={chosenTheme} />
         </div>
       </>

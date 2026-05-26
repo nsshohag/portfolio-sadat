@@ -5,6 +5,7 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -18,8 +19,41 @@ export default function Greeting(props) {
                 {greeting.title}
               </h1>
               {greeting.nickname && (
-                <h2 className="greeting-nickname" style={{ color: theme.text }}>
-                  ( {greeting.nickname} )
+                <h2
+                  className="greeting-nickname"
+                  style={{ color: theme.text }}
+                >
+                  ( {greeting.nickname}{" "}
+                  {greeting.company && (
+                    <OverlayTrigger
+                      placement="top"
+                      overlay={
+                        <Tooltip id="pathao-tooltip">
+                          <strong>{greeting.company.name}</strong>
+                        </Tooltip>
+                      }
+                    >
+                      <a
+                        href={greeting.company.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={greeting.company.name}
+                        className="greeting-company-link"
+                        style={{ color: "inherit", textDecoration: "none" }}
+                      >
+                        <span
+                          className="iconify"
+                          data-icon={greeting.company.icon}
+                          data-inline="false"
+                          style={{
+                            fontSize: "1.15em",
+                            verticalAlign: "middle",
+                          }}
+                        />
+                      </a>
+                    </OverlayTrigger>
+                  )}
+                  )
                 </h2>
               )}
               <p
@@ -38,17 +72,9 @@ export default function Greeting(props) {
                   className="portfolio-repo-btn"
                 />
               </div>
-              {/* <div className="button-greeting-div">
-              <Button text="Contact me" href="#contact" />
-              <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
-            </div> */}
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* <img
-							alt="saad sitting on table"
-							src={require("../../assets/images/feelingProud.svg")}
-						></img> */}
             <FeelingProud theme={theme} />
           </div>
         </div>

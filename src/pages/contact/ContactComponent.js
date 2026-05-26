@@ -8,12 +8,14 @@ import BlogsImg from "./BlogsImg";
 import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
+import ContactForm from "../../components/contactForm/ContactForm";
 import { contactPageData } from "../../portfolio.js";
 
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
 const addressSection = contactPageData.addressSection;
 const phoneSection = contactPageData.phoneSection;
+const contactFormSection = contactPageData.contactFormSection;
 
 class Contact extends Component {
   render() {
@@ -128,6 +130,9 @@ class Contact extends Component {
                 </div>
               </div>
             </div>
+          </Fade>
+          <Fade bottom duration={1000} distance="40px">
+            <ContactForm theme={theme} formSection={contactFormSection} />
           </Fade>
         </div>
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />

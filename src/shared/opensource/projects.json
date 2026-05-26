@@ -2,72 +2,335 @@
   "data": [
     {
       "id": "R_kgDOJWL0-g",
-      "name": "mdp-diffusion",
-      "createdAt": "2023-04-13T04:18:19Z",
-      "url": "https://github.com/ashutosh1919/mdp-diffusion",
-      "description": "Text-guided image editing by manipulating diffusion path without any training.",
+      "name": "ArgoCD with Authentik SSO",
+      "createdAt": "2026-01-07T09:49:38.707Z",
+      "url": "https://gitlab.com/sadat99/authentik-argocd",
+      "description": "ArgoCD with Authentik as the Identity Provider (IdP) on a single GCP VM using Docker, Kind cluster, and Nginx reverse proxy.",
       "isFork": false,
       "languages": [
         {
-          "name": "Python",
-          "iconifyClass": "logos-python"
+          "name": "ArgoCD",
+          "iconifyClass": "devicon:argocd"
         },
         {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
+          "name": "Authentik",
+          "iconifyClass": "simple-icons:authentik"
         },
         {
-          "name": "Jupyter Notebook",
-          "iconifyClass": "logos-jupyter"
+          "name": "Docker",
+          "iconifyClass": "material-icon-theme:docker"
+        },
+        {
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
         }
       ]
     },
     {
       "id": "R_kgDOG_vYHA",
-      "name": "explainable-cnn",
-      "createdAt": "2022-03-13T20:41:33Z",
-      "url": "https://github.com/ashutosh1919/explainable-cnn",
-      "description": "📦 PyTorch based visualization package for generating layer-wise explanations for CNNs.",
+      "name": "Netbird with Authentik SSO",
+      "createdAt": "2025-10-14T09:46:32.215Z",
+      "url": "https://gitlab.com/sadat99/netbird",
+      "description": "Netbird with Authentik as the Identity Provider (IdP) on a single GCP VM using Docker, Kind cluster, and Nginx reverse proxy.",
       "isFork": false,
       "languages": [
         {
-          "name": "Python",
-          "iconifyClass": "logos-python"
+          "name": "Authentik",
+          "iconifyClass": "simple-icons:authentik"
+        },
+        {
+          "name": "Netbird",
+          "iconifyClass": "arcticons:netbird"
+        },
+        {
+          "name": "Nginx",
+          "iconifyClass": "simple-icons:nginx"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "masterPortfolio",
-      "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/ashutosh1919/masterPortfolio",
-      "description": "🔥 The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer.",
+      "name": "Thanos",
+      "createdAt": "2025-09-02T08:28:30.774Z",
+      "url": "https://gitlab.com/sadat99/thanos",
+      "description": "🔥 Thanos Long-term Storage & High Availability Monitoring Stack",
       "isFork": false,
       "languages": [
         {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
+          "name": "Thanos",
+          "iconifyClass": "simple-icons:thanos"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "Prometheus",
+          "iconifyClass": "simple-icons:prometheus"
         },
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
         }
       ]
     },
     {
       "id": "R_kgDOG0_8uQ",
-      "name": "react-awesome-shapes",
-      "createdAt": "2022-02-11T14:50:20Z",
-      "url": "https://github.com/ashutosh1919/react-awesome-shapes",
-      "description": "🌀 Insert Awesome Shapes into Your React Site with Ease.",
+      "name": "Fluent Bit, Loki, and Grafana",
+      "createdAt": "2025-07-06T07:24:00.091Z",
+      "url": "https://gitlab.com/sadat99/fluentbit-loki-grafana",
+      "description": "🌀 A comprehensive logging stack for Kubernetes environments using Fluent Bit for log collection, Loki for storage and aggregation, and Grafana for visualization and querying.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Fluent Bit",
+          "iconifyClass": "simple-icons:fluentbit"
+        },
+        {
+          "name": "Grafana",
+          "iconifyClass": "simple-icons:grafana"
+        },
+        {
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOGcPKSQ",
+      "name": "Secret Generator Controller",
+      "createdAt": "2025-05-21T07:34:22.816Z",
+      "url": "https://gitlab.com/sadat99/custom-secret",
+      "description": "⚙️ The Secret Generator Controller is a Kubernetes controller designed to manage a Custom Resource Definition (CRD) called CustomSecret.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Go",
+          "iconifyClass": "devicon:go"
+        },
+        {
+          "name": "Makefile",
+          "iconifyClass": "simple-icons:gnu"
+        },
+        {
+          "name": "Dockerfile",
+          "iconifyClass": "simple-icons:docker"
+        },
+        {
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
+      "name": "🐰 RabbitMQ",
+      "createdAt": "2025-06-24T09:08:22.940Z",
+      "url": "https://gitlab.com/sadat99/rabbitmq",
+      "description": "🚀 Three distinct projects demonstrating RabbitMQ message queue implementations for different environments.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "RabbitMQ",
+          "iconifyClass": "simple-icons:rabbitmq"
+        },
+        {
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "simple-icons:docker"
+        }
+      ]
+    },
+    {
+      "id": "70235978",
+      "name": "Pod Watcher Controller",
+      "createdAt": "2025-05-27T06:08:06.240Z",
+      "url": "https://gitlab.com/sadat99/pod-status",
+      "description": "The Pod Watcher Controller is a Kubernetes controller designed to monitor pod events in specified namespaces and send notifications when harmful or critical events occur.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Go",
+          "iconifyClass": "devicon:go"
+        },
+        {
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "70281744",
+      "name": "Kubernetes Mutating and Validating Webhook",
+      "createdAt": "2025-05-28T12:20:18.608Z",
+      "url": "https://gitlab.com/sadat99/webhook",
+      "description": "Setting up mutating and validating webhooks in a Kubernetes kind cluster.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Go",
+          "iconifyClass": "devicon:go"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "simple-icons:docker"
+        },
+        {
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "71082408",
+      "name": "System Monitoring Stack",
+      "createdAt": "2025-06-24T08:57:59.437Z",
+      "url": "https://gitlab.com/sadat99/monitor",
+      "description": "System Monitoring Stack with Grafana, Prometheus, Node Exporter, and RabbitMQ.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Prometheus",
+          "iconifyClass": "simple-icons:prometheus"
+        },
+        {
+          "name": "Grafana",
+          "iconifyClass": "simple-icons:grafana"
+        },
+        {
+          "name": "RabbitMQ",
+          "iconifyClass": "simple-icons:rabbitmq"
+        },
+        {
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "77866624",
+      "name": "Mailcow Mail Server",
+      "createdAt": "2026-01-21T07:18:07.632Z",
+      "url": "https://gitlab.com/sadat99/mail",
+      "description": "Mailcow is a Docker-based mail server suite that bundles 18 containerised services into a cohesive platform.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Cloudflare",
+          "iconifyClass": "simple-icons:cloudflare"
+        },
+        {
+          "name": "Mailcow",
+          "iconifyClass": "material-symbols:mail"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "simple-icons:docker"
+        }
+      ]
+    },
+    {
+      "id": "71408449",
+      "name": "Logging Stack with Filebeat, Elasticsearch, and Kibana",
+      "createdAt": "2025-07-06T18:23:39.963Z",
+      "url": "https://gitlab.com/sadat99/filebeat-elasticsearch-kibana",
+      "description": "Logging pipeline in a Kubernetes Kind cluster to collect, store, and visualize logs from a specified namespace (server) using Filebeat, Elasticsearch, and Kibana.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Elasticsearch",
+          "iconifyClass": "simple-icons:elasticsearch"
+        },
+        {
+          "name": "Kibana",
+          "iconifyClass": "simple-icons:kibana"
+        },
+        {
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "75843413",
+      "name": "Redis standalone, replication with Sentinel, and clustering",
+      "createdAt": "2025-11-05T07:41:45.603Z",
+      "url": "https://gitlab.com/sadat99/redis",
+      "description": "A comprehensive guide covering Redis standalone, replication with Sentinel, and clustering setups on Docker and Kubernetes.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Redis",
+          "iconifyClass": "simple-icons:redis"
+        },
+        {
+          "name": "Go",
+          "iconifyClass": "devicon:go"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "simple-icons:docker"
+        },
+        {
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "73712831",
+      "name": "Kong Gateway with custom plugins",
+      "createdAt": "2025-08-23T19:15:49.825Z",
+      "url": "https://gitlab.com/sadat99/kong",
+      "description": "Kong Gateway environment with custom Lua plugins, multiple Go backend servers, and various Kong features.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Kong",
+          "iconifyClass": "logos:kong-icon"
+        },
+        {
+          "name": "Lua",
+          "iconifyClass": "devicon:lua"
+        },
+        {
+          "name": "Go",
+          "iconifyClass": "devicon:go"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "simple-icons:docker"
+        },
+
+        {
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "71480752",
+      "name": "Consul Cluster Setup",
+      "createdAt": "2025-07-09T06:41:24.666Z",
+      "url": "https://gitlab.com/sadat99/consul",
+      "description": "Consul server cluster deployed using Docker Compose and Kubernetes.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Consul",
+          "iconifyClass": "devicon:consul"
+        },
+        {
+          "name": "Kubernetes",
+          "iconifyClass": "mdi:kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOKwiNtA",
+      "name": "Health Disease Prediction",
+      "createdAt": "2023-11-22T07:24:00Z",
+      "url": "https://github.com/nsshohag/health_disease_prediction",
+      "description": "Health Disease Prediction System Using Machine Learning.",
       "isFork": false,
       "languages": [
         {
@@ -79,45 +342,26 @@
           "iconifyClass": "logos-css-3"
         },
         {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
           "name": "JavaScript",
           "iconifyClass": "logos-javascript"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOGcPKSQ",
-      "name": "neuro-symbolic-sudoku-solver",
-      "createdAt": "2021-11-26T17:56:07Z",
-      "url": "https://github.com/ashutosh1919/neuro-symbolic-sudoku-solver",
-      "description": "⚙️ Solving sudoku using Deep Reinforcement learning in combination with powerful symbolic representations.",
-      "isFork": false,
-      "languages": [
+        },
+        {
+          "name": "Java",
+          "iconifyClass": "logos-java"
+        },
         {
           "name": "Python",
           "iconifyClass": "logos-python"
-        }
-      ]
-    },
-    {
-      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
-      "name": "react-liquidswipe",
-      "createdAt": "2021-01-01T08:31:51Z",
-      "url": "https://github.com/ashutosh1919/react-liquidswipe",
-      "description": "🚀 Smooth Liquid Swipe Animation to transition between different components.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "FastAPI",
+          "iconifyClass": "devicon:fastapi"
+        },
+        {
+          "name": "Android",
+          "iconifyClass": "devicon:android"
         }
+
       ]
     }
   ]

@@ -49,6 +49,22 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+.education-main,
+.experience-main,
+.projects-main,
+.contact-main,
+.opensource-main,
+.resume-main,
+.error-main,
+.page-shell,
+.app-router-shell {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 body {
   margin: 0;
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;

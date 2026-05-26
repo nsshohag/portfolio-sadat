@@ -1,0 +1,115 @@
+.contact-form-section {
+  max-width: 720px;
+  margin: 80px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.contact-form-eyebrow {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-family: "Google Sans Medium";
+}
+
+.contact-form-title {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  margin: 0 0 16px;
+}
+
+.contact-form-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 auto 32px;
+  max-width: 560px;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 16px;
+  font-family: "Google Sans Regular";
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact-form-input:focus,
+.contact-form-textarea:focus {
+  box-shadow: 0 0 0 1px currentColor;
+}
+
+.contact-form-textarea {
+  margin-bottom: 24px;
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-form-captcha {
+  margin-bottom: 24px;
+}
+
+.contact-form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-family: "Google Sans Medium";
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.contact-form-submit:hover {
+  opacity: 0.9;
+}
+
+.contact-form-submit-arrow {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.contact-form-result {
+  margin-top: 16px;
+  text-align: center;
+  font-family: "Google Sans Medium";
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .contact-form-section {
+    margin-top: 60px;
+  }
+
+  .contact-form-title {
+    font-size: 32px;
+  }
+
+  .contact-form-description {
+    font-size: 16px;
+  }
+
+  .contact-form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

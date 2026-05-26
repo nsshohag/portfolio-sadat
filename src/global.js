@@ -7,16 +7,26 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
+
   body {
-    align-items: center;
+    margin: 0;
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // height: 100vh;
-    // margin: 0;
-    // padding: 0;
+    flex-direction: column;
+    align-items: stretch;
     font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    transition: all 0.25s linear;
+    transition: background 0.25s linear, color 0.25s linear;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }`;
