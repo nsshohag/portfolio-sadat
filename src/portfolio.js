@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Sadat's Portfolio",
     type: "website",
-    url: "https://about.nsshohag.xyz",
+    url: "https://nsshohag.xyz",
   },
 };
 
