@@ -9,12 +9,16 @@
     "deploy": "gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject",
     "start": "react-scripts --openssl-legacy-provider start",
+    "dev:visitor-api": "node scripts/run-visitor-api.js",
+    "dev": "concurrently -n web,api -c blue,green \"npm run start\" \"npm run dev:visitor-api\"",
+    "dev:api": "NODE_OPTIONS=--openssl-legacy-provider vercel dev",
     "test": "react-scripts test"
   },
   "dependencies": {
     "apollo-boost": "^0.4.4",
     "baseui": "^9.65.3",
     "chart.js": "^2.9.3",
+    "firebase-admin": "^12.7.0",
     "gh-pages": "^2.1.1",
     "node-fetch": "^2.6.0",
     "pdfjs-dist": "^2.12.313",
@@ -30,10 +34,13 @@
     "react-scripts": "3.2.0",
     "styled-components": "^5.1.1",
     "styletron-engine-atomic": "^1.4.6",
-    "styletron-react": "^5.2.7"
+    "styletron-react": "^5.2.7",
+    "ua-parser-js": "^1.0.41"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "dotenv": "^6.2.0",
+    "http-proxy-middleware": "^0.19.2",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "2.0.5"
