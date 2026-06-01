@@ -18,6 +18,8 @@ export function getStoredVisitor() {
 
 function saveVisitor(record) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(record));
+  localStorage.setItem("0Owner", "Sadat!!!");
+  console.log("Visitor saved by Sadat !!! :", record);
 }
 
 async function registerVisitor(record) {
@@ -44,6 +46,7 @@ async function registerVisitor(record) {
 export function initVisitorTracking() {
   const existing = getStoredVisitor();
   if (existing && existing.visitorId) {
+    console.log("Thanks for visiting my portfolio !!!");
     return;
   }
 
@@ -53,7 +56,7 @@ export function initVisitorTracking() {
     owner: "Sadat",
   };
 
-  console.log("Thanks for visiting my portfolio !!!");
+  console.log("Thanks for visiting my portfolio for the first time !!!");
   saveVisitor(record);
 
   registerVisitor(record).catch((error) => {
