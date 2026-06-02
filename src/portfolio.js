@@ -2,7 +2,7 @@
 
 // Website related settings
 const settings = {
-  isSplash: false, // Change this to false if you don't want Splash screen.
+  isSplash: true, // DotLottie intro at / and /splash; set false to skip.
 };
 
 //SEO Related settings
