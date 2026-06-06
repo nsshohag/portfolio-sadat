@@ -1,0 +1,65 @@
+.typewriter-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.typewriter-placeholder {
+  visibility: hidden;
+  margin: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.typewriter-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.1em;
+  margin-left: 3px;
+  vertical-align: text-bottom;
+  border-radius: 1px;
+  opacity: 0.9;
+  animation: typewriterBlink 1.05s ease-in-out infinite;
+}
+
+.typewriter-cursor.is-complete {
+  animation: typewriterFadeOut 1.2s ease-in-out 5 forwards;
+}
+
+@keyframes typewriterBlink {
+  0%,
+  45% {
+    opacity: 0.95;
+  }
+  50%,
+  95% {
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 0.95;
+  }
+}
+
+@keyframes typewriterFadeOut {
+  0%,
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .typewriter-text,
+  .typewriter-placeholder {
+    text-align: center;
+  }
+}

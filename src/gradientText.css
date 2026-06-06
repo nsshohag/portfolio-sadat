@@ -1,0 +1,26 @@
+.gradient-text-flow {
+  background: linear-gradient(
+    90deg,
+    var(--gradient-from) 0%,
+    var(--gradient-to) 20%,
+    var(--gradient-from) 40%,
+    var(--gradient-to) 60%,
+    var(--gradient-from) 80%,
+    var(--gradient-to) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: gradientTextShift 6s ease-in-out infinite;
+}
+
+@keyframes gradientTextShift {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

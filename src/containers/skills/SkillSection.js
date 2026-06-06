@@ -7,6 +7,7 @@ import DataScienceImg from "./DataScienceImg";
 import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
+import SkillLinesTypewriter from "./SkillLinesTypewriter";
 
 function GetSkillSvg(props) {
   if (props.fileName === "DataScienceImg")
@@ -46,19 +47,7 @@ class SkillSection extends Component {
                   <SoftwareSkill logos={skill.softwareSkills} />
                 </Fade>
                 <Fade right duration={2000}>
-                  <div>
-                    {skill.skills.map((skillSentence, i) => {
-                      return (
-                        <p
-                          key={i}
-                          className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
-                        >
-                          {skillSentence}
-                        </p>
-                      );
-                    })}
-                  </div>
+                  <SkillLinesTypewriter lines={skill.skills} theme={theme} />
                 </Fade>
               </div>
             </div>

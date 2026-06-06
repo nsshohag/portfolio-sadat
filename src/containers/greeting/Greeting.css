@@ -32,9 +32,35 @@
 
 .greeting-text {
   margin-top: 80px;
-  font-size: 70px;
+  font-size: 56px;
   line-height: 1.1;
   font-family: "Google Sans Bold";
+}
+
+.greeting-name-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--gradient-from) 0%,
+    var(--gradient-from) 32%,
+    var(--gradient-to) 50%,
+    var(--gradient-from) 68%,
+    var(--gradient-from) 100%
+  );
+  background-size: 280% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: greetingNameGradientFlow 3s linear infinite;
+}
+
+@keyframes greetingNameGradientFlow {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .greeting-nickname {
@@ -44,10 +70,22 @@
 }
 
 .greeting-text-p {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 21px;
+  line-height: 1.65;
+  margin-top: 12px;
   margin-right: 40px;
-  font-family: "Google Sans Medium";
+  font-family: "Google Sans Bold";
+  letter-spacing: 0.01em;
+}
+
+.greeting-text-div .typewriter-wrap {
+  margin-top: 12px;
+  margin-right: 40px;
+}
+
+.greeting-text-div .typewriter-wrap .greeting-text-p {
+  margin-top: 0;
+  margin-right: 0;
 }
 
 .greeting-image-div > * {
@@ -58,10 +96,10 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 42px;
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 19px;
   }
 }
 @media (max-width: 768px) {
@@ -69,7 +107,7 @@
     justify-content: space-around;
   }
   .greeting-text {
-    font-size: 30px;
+    font-size: 26px;
     margin-top: 0px;
     text-align: center;
   }
@@ -78,10 +116,15 @@
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 16px;
+    font-size: 17px;
     margin-right: 0px;
-    line-height: normal;
+    line-height: 1.6;
     text-align: center;
+  }
+
+  .greeting-text-div .typewriter-wrap {
+    margin-right: 0;
+    padding: 0 10px;
   }
   .greeting-main {
     display: block;

@@ -5,6 +5,7 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import TypewriterText from "../../components/typewriterText/TypewriterText";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export default function Greeting(props) {
@@ -15,7 +16,13 @@ export default function Greeting(props) {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1 className="greeting-text" style={{ color: theme.text }}>
+              <h1
+                className="greeting-text greeting-name-gradient"
+                style={{
+                  "--gradient-from": theme.text,
+                  "--gradient-to": theme.imageHighlight,
+                }}
+              >
                 {greeting.title}
               </h1>
               {greeting.nickname && (
@@ -56,12 +63,14 @@ export default function Greeting(props) {
                   )
                 </h2>
               )}
-              <p
+              <TypewriterText
+                text={greeting.subTitle}
                 className="greeting-text-p subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {greeting.subTitle}
-              </p>
+                style={{ color: theme.text }}
+                baseDelay={42}
+                startDelay={800}
+                cursorColor={theme.imageHighlight}
+              />
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">
                 <Button
