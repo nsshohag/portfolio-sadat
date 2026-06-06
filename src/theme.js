@@ -195,4 +195,28 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
+export const DEFAULT_THEME_ID = "blue";
+
+export const themeCatalog = {
+  blue: { label: "Ocean Blue", theme: blueTheme },
+  teal: { label: "Teal", theme: tealTheme },
+  purple: { label: "Purple", theme: purpleTheme },
+  green: { label: "Forest", theme: greenTheme },
+  materialDark: { label: "Dark", theme: materialDarkTheme },
+  materialLight: { label: "Light", theme: materialLightTheme },
+  orange: { label: "Orange", theme: orangeTheme },
+  brown: { label: "Brown", theme: brownTheme },
+  red: { label: "Red", theme: redTheme },
+  pink: { label: "Pink", theme: pinkTheme },
+  violet: { label: "Violet", theme: violetTheme },
+  yellow: { label: "Yellow", theme: yellowTheme },
+  black: { label: "Slate", theme: blackTheme },
+  materialTeal: { label: "Material Teal", theme: materialTealTheme },
+};
+
+export function getThemeById(id) {
+  const entry = themeCatalog[id];
+  return entry ? entry.theme : blueTheme;
+}
+
 export const chosenTheme = blueTheme;
