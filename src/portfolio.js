@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Sadat's Portfolio",
     type: "website",
-    url: "https://nsshohag.xyz",
+    url: "https://nsshohag.space",
   },
 };
 
@@ -697,7 +697,7 @@ const contactPageData = {
     title: "Blogs",
     subtitle:
       "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
-    link: "https://blogs.nsshohag.xyz",
+    link: "https://blogs.nsshohag.space",
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
